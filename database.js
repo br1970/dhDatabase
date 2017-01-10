@@ -75,7 +75,7 @@ app.get('/dbConnected', function(req, res)
   // test if connected to the DB
   if(helper.dbConnected()==true)
   { // connected to the DB
-    retjson.success = "Succesfully connected to the **MONGO** DB.";
+    retjson.success = "Succesfully connected to the ***MONGO*** DB.";
   
     // Let's fetch the list of collections currently stored in the DB
     helper.dbref().listCollections().toArray(function(err, items) 
