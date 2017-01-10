@@ -26,7 +26,7 @@ app.use(bodyParser.json()); // for parsing application/json
 
 // what host and port should we listen on?
 //var _host = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';  // host to listen on
-var _port = 8081;       // port to listen on
+var _port = 80;       // port to listen on
 
 //-----------------------------------------------------------------------------
 // return code definitions, used in json responses {"RC": _rcOK}  
@@ -47,7 +47,7 @@ helper.dbInit( function(err)
 {
   if(!err)
   { // DB connections have been established. 
-    console.log('  ... application has successfully connected to the DB');
+    console.log('  ... application has SUCCESSFULLY connected to the MONGO DB');
   }
   else
   { // OH no! something has gone wrong building DB connections!
@@ -75,7 +75,7 @@ app.get('/dbConnected', function(req, res)
   // test if connected to the DB
   if(helper.dbConnected()==true)
   { // connected to the DB
-    retjson.success = "Succesfully connected to the DB.";
+    retjson.success = "Succesfully connected to the **MONGO** DB.";
   
     // Let's fetch the list of collections currently stored in the DB
     helper.dbref().listCollections().toArray(function(err, items) 
