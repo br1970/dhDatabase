@@ -5,7 +5,7 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 # Install app dependencies
-COPY database.js /usr/src/app/
+COPY app.js /usr/src/app/
 COPY helpers.js /usr/src/app/
 COPY package.json /usr/src/app/
 
