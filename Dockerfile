@@ -16,4 +16,4 @@ COPY . /usr/src/app
 
 EXPOSE 80
 #CMD [ "npm", "start" ]
-CMD node /usr/src/app/database.js
+CMD node /usr/src/app/app.js
