@@ -14,6 +14,6 @@ RUN npm install
 # Bundle app source
 COPY . /usr/src/app
 
-EXPOSE 8081
+EXPOSE 80
 #CMD [ "npm", "start" ]
 CMD node /usr/src/app/database.js
