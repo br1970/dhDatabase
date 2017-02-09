@@ -4,7 +4,7 @@ phases:
   pre_build:
     commands:
       - echo Logging in to Docker Hub...
-      - docker login --username="xswang" --password="docker8ws"          
+      - docker login --username="balduino" --password="Docker17"          
   build:
     commands:
       - echo Build started on `date`
