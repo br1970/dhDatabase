@@ -3,7 +3,7 @@
   "containerDefinitions": [
     {
       "name": "dhdatabase",
-      "image": "xswang/dhdatabase",
+      "image": "balduino/dhdatabase",
       "essential": true,
       "memory": 128,
       "portMappings": [
